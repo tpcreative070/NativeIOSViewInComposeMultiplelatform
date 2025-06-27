@@ -14,7 +14,7 @@ import androidx.compose.ui.viewinterop.UIKitViewController
 actual fun NativeButton(onClick: () -> Unit, modifier: Modifier) {
     val factory = LocalNativeViewFactory.current
     UIKitViewController(
-        modifier = modifier.fillMaxWidth().width(100.dp).height(50.dp),
+        modifier = modifier.fillMaxSize(),
         factory = {
             factory.createButtonView(
                 label = "IOS Button",

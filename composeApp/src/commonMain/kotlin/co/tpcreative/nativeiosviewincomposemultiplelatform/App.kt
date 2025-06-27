@@ -32,12 +32,13 @@ fun App() {
             var counter by remember {
                 mutableIntStateOf(0)
             }
+
+            Text("Counter: $counter")
             NativeButton(
                 onClick = {
                     counter++
                 }
             )
-            Text("Counter: $counter")
 
         }
     }

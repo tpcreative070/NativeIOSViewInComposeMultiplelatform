@@ -32,14 +32,14 @@ struct SimpleIOSButton: View {
                      .font(.headline)
              }
 
-             // NavigationView {
-             //     List(fruits, id: \.self) { fruit in
-             //         NavigationLink(destination: FruitDetailView(fruit: fruit)) {
-             //             Text(fruit)
-             //         }
-             //     }
-             //     .navigationTitle("Fruit List")
-             // }
+             NavigationView {
+                 List(fruits, id: \.self) { fruit in
+                     NavigationLink(destination: FruitDetailView(fruit: fruit)) {
+                         Text(fruit)
+                     }
+                 }
+                 .navigationTitle("Fruit List")
+             }
 
          }
 
